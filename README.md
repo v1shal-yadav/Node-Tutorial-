@@ -1,5 +1,32 @@
-﻿# sorting-visualizer
-Visualize the common sorting algorithms with smooth animations. Learn about them in the site as well, with external resources to learn more. Bootstrapped from React create-react-app. <br/><br/>
-The buttons in the upper center of the page allow for the animations to occur. Click on of them to check it out! Also, you can adjsut the speed of the animations and the number of bars at the top of the page for better visualization of the algorithms. <br/><br/>
-To stop the animation, click the stop button on the top left. The (i) button on the top left allows you to learn more about the algorithms. I've provided some pseudocode on the site as well if you'd like to check that out!
+# Sorting-Visualizer
+The concept of visualizing algorithms lets us understand algorithms in a much better way.
 
+This project is built using ReactJS. 
+It includes visualization of few classic sorting algorithms such as: Bubble Sort, Selection Sort and Insertion Sort.
+
+Play around with it: https://crazydjp.github.io/Sorting-Visualizer/ 
+
+( NOTE:  Enable hardware acceleration in Chrome for smooth transition effect. )
+
+# Components
+It consists of 4 main components.
+
+1. **Header:** This component is just a text animation of the text "Sorting Visualizer".
+![Header](https://i.imgur.com/QF8g3lE.gif)
+
+2. **Buttons Bar:** This component includes few buttons which are used to start visualizing algorithms.
+![Buttons Bar](https://i.imgur.com/3ilPL5x.png)
+
+3. **Array Bar:** This component is where we visualize the algorithm using 3D Vertical Bars.
+![Array Bar](https://i.imgur.com/97OaSKz.png)
+
+4. **Range Slider:** This component includes some range sliders through which array size and animation speed can be changed in real time.
+![Range Slider](https://i.imgur.com/XhLEuFy.gif)
+
+# How does animations work?
+While the array is being sorted, we push some indexes of the array and boolean values into animations array. 
+These indexes are the indexes of the comparing element and final positioned element; and the boolean values are doSwap and isFinal which tells if the elment is being compared or is it in its final position. 
+Now, this animations array is passed to another function which basically changes the color and size of the bar of the indexes in animations array. 
+These changes are being done through a setTimeout() function to let the change be delayed and visible.
+
+PLAY AROUND WITH IT AND HAVE FUN! :)
