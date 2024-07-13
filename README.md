@@ -1,32 +1,25 @@
-# Sorting-Visualizer
-The concept of visualizing algorithms lets us understand algorithms in a much better way.
+# Sorting_Visualizer
 
-This project is built using ReactJS. 
-It includes visualization of few classic sorting algorithms such as: Bubble Sort, Selection Sort and Insertion Sort.
+A web application showcasing the inner workings of sorting algorithms.
 
-Play around with it: https://crazydjp.github.io/Sorting-Visualizer/ 
+Implemented algorithms:
+1) Bubble sort
+2) Selection sort
+3) Insertion sort
+4) Merge sort
+5) Quick sort
+6) Heap sort
 
-( NOTE:  Enable hardware acceleration in Chrome for smooth transition effect. )
+Features:
+1) Colored representation of step being executed.
+  1.1) Blue:default
+  1.2) Yellow: Being compared
+  1.3) Red: Identified as in incorrect position and to be moved
+  1.4) Green: In correct position
+2) 3 Controls for visualizations
+  2.1) Speed of visualization (5 speed levels)
+  2.2) Data size ()
+  2.3) Generation of new data (Randomly generate new data).
+4) Time and Space complexity of algorithm being visualized.
 
-# Components
-It consists of 4 main components.
-
-1. **Header:** This component is just a text animation of the text "Sorting Visualizer".
-![Header](https://i.imgur.com/QF8g3lE.gif)
-
-2. **Buttons Bar:** This component includes few buttons which are used to start visualizing algorithms.
-![Buttons Bar](https://i.imgur.com/3ilPL5x.png)
-
-3. **Array Bar:** This component is where we visualize the algorithm using 3D Vertical Bars.
-![Array Bar](https://i.imgur.com/97OaSKz.png)
-
-4. **Range Slider:** This component includes some range sliders through which array size and animation speed can be changed in real time.
-![Range Slider](https://i.imgur.com/XhLEuFy.gif)
-
-# How does animations work?
-While the array is being sorted, we push some indexes of the array and boolean values into animations array. 
-These indexes are the indexes of the comparing element and final positioned element; and the boolean values are doSwap and isFinal which tells if the elment is being compared or is it in its final position. 
-Now, this animations array is passed to another function which basically changes the color and size of the bar of the indexes in animations array. 
-These changes are being done through a setTimeout() function to let the change be delayed and visible.
-
-PLAY AROUND WITH IT AND HAVE FUN! :)
+Take a look at live version: https://kethantummala.github.io/Sorting_Visualizer/
